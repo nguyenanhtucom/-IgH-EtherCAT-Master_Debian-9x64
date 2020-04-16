@@ -6,6 +6,11 @@ $ hg clone http://hg.code.sf.net/u/uecasm/etherlab-patches etherlab/.hg/patches
 
 $ cd etherlab
 
+## Create or edit your ~/.hgrc file and ensure it has at least the following contents:
+ 	
+	[extensions]
+ 	mq =
+ 
 $ hg qpush -a
 
 ## Get Ethernet infomation
