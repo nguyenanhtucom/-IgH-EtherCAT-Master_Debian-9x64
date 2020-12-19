@@ -36,6 +36,14 @@ $ sudo make modules_install
 
 $ sudo /sbin/depmod
 
+Note: configure: error: Failed to find Linux sources. Use --with-linux-dir!
+
+	$ sudo apt install linux-headers-$(uname -r)
+
+	$ ls -l /usr/src/linux-headers-$(uname -r)
+
+	./configure --with-linux-dir=/usr/src/linux-headers-$(uname -r) --enable-8139too=no --enable-wildcards=yes
+
 ## Configure your environnement
 
 $ sudo mkdir /etc/sysconfig
