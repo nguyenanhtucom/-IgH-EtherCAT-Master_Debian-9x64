@@ -43,7 +43,7 @@ $ ./configure --disable-8139too --enable-e1000e
 
 	$ ls -l /usr/src/linux-headers-$(uname -r)
 
-	./configure --with-linux-dir=/usr/src/linux-headers-$(uname -r) --enable-8139too=no --enable-wildcards=yes
+	./configure --with-linux-dir=/usr/src/linux-headers-$(uname -r) --enable-8139too=no --enable-e1000e --enable-wildcards=yes
 
 $ make
 
