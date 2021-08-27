@@ -1,10 +1,10 @@
 ## Download the ethercat master source files
 
-$ hg clone -u 33b922ec1871 http://hg.code.sf.net/p/etherlabmaster/code etherlab
+$ hg clone http://hg.code.sf.net/p/etherlabmaster/code ethercat-hg
 
-$ hg clone http://hg.code.sf.net/u/uecasm/etherlab-patches etherlab/.hg/patches
+$ cd ethercat-hg
 
-$ cd etherlab
+$ hg update stable-1.5 (Check new version at https://sourceforge.net/projects/etherlabmaster/)
 
 ## Create or edit your ~/.hgrc file and ensure it has at least the following contents:
  	
