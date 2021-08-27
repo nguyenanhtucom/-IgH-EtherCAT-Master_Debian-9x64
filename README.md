@@ -37,7 +37,7 @@ $  ./bootstrap
 
 $ ./configure --disable-8139too --enable-e1000e 
 
-Note: configure: error: Failed to find Linux sources. Use --with-linux-dir!
+	error: Failed to find Linux sources. Use --with-linux-dir!
 
 	$ sudo apt install linux-headers-$(uname -r)
 
