@@ -1,3 +1,14 @@
+
+sudo apt-get install software-properties-common
+
+sudo add-apt-repository -y ppa:mercurial-ppa/releases
+
+sudo apt-get update
+
+sudo apt-get install -y python-pip python-dev
+
+sudo pip install mercurial --upgrade
+
 ## Download the ethercat master source files
 
 $ hg clone http://hg.code.sf.net/p/etherlabmaster/code ethercat-hg
@@ -26,6 +37,14 @@ $  ./bootstrap
 
 $ ./configure --disable-8139too --enable-e1000e 
 
+Note: configure: error: Failed to find Linux sources. Use --with-linux-dir!
+
+	$ sudo apt install linux-headers-$(uname -r)
+
+	$ ls -l /usr/src/linux-headers-$(uname -r)
+
+	./configure --with-linux-dir=/usr/src/linux-headers-$(uname -r) --enable-8139too=no --enable-wildcards=yes
+
 $ make
 
 $ make modules
@@ -36,13 +55,7 @@ $ sudo make modules_install
 
 $ sudo /sbin/depmod
 
-Note: configure: error: Failed to find Linux sources. Use --with-linux-dir!
 
-	$ sudo apt install linux-headers-$(uname -r)
-
-	$ ls -l /usr/src/linux-headers-$(uname -r)
-
-	./configure --with-linux-dir=/usr/src/linux-headers-$(uname -r) --enable-8139too=no --enable-wildcards=yes
 
 ## Configure your environnement
 
