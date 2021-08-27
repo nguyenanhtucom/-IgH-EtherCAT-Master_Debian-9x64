@@ -67,7 +67,9 @@ $ sudo cp script/init.d/ethercat /etc/init.d/ethercat
 
 $ sudo nano /etc/sysconfig/ethercat
 
-In the file, enter the Ethernet devices Mac address in the MASTER0_DEVICE variable and the driver in DEVICE_MODULES variable
+	$ ip address (get Mac address)
+	
+	In the file, enter the Ethernet devices Mac address in the MASTER0_DEVICE variable and the driver in DEVICE_MODULES variable
 
 	MASTER0_DEVICE="e8:40:f2:3e:73:b4"
 
