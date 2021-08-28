@@ -9,6 +9,12 @@ sudo apt-get install -y python-pip python-dev
 
 sudo pip install mercurial --upgrade
 
+## Debian 11
+
+sudo apt install python3-venv python3-pip 
+
+sudo pip3 install mercurial --upgrade
+
 ## Download the ethercat master source files
 
 $ hg clone http://hg.code.sf.net/p/etherlabmaster/code ethercat-hg
