@@ -9,11 +9,11 @@ sudo apt-get install -y python-pip python-dev
 
 sudo pip install mercurial --upgrade
 
-## Debian 11
+	## Debian 11
 
-sudo apt install python3-venv python3-pip 
+	sudo apt install python3-venv python3-pip 
 
-sudo pip3 install mercurial --upgrade
+	sudo pip3 install mercurial --upgrade
 
 ## Download the ethercat master source files
 
