@@ -87,6 +87,8 @@ sudo chmod a+x /etc/init.d/ethercat
 
 sudo /etc/init.d/ethercat start
 
+	ERROR: could not insert 'ec_master': Required key not available (fix this issue is to disable Secure Boot in UEFI (BIOS) settings)
+	
 sudo /etc/init.d/ethercat restart
 
 sudo /etc/init.d/ethercat stop
